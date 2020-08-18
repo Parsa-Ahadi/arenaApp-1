@@ -1,3 +1,4 @@
+import 'package:arena/Utilities/FunkoPopDetail.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
@@ -7,6 +8,7 @@ class ShopItemDetailPage extends StatefulWidget {
   final String itemName;
   final String price;
   final String description;
+
 
   ShopItemDetailPage({this.price, this.itemName, this.image, this.description});
 
