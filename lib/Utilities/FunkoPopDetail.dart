@@ -4,7 +4,7 @@ class FunkoPopDetail {
   final String imageUrl;
   final String price;
   final String title;
-  final double tagTitle;
+  int tagTitle;
   final Color bgColor;
   final int remainingOfItem;
   final int rating;
