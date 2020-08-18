@@ -151,7 +151,7 @@ class _ShopItemDetailPageState extends State<ShopItemDetailPage> {
                           child: Text(
                             (_itemNum == 0 || _itemNum < 0)
                                 ? 'Buy'
-                                : 'Buy ${_itemNum}',
+                                : 'Buy $_itemNum',
                             style: GoogleFonts.nunito(
                                 color: Color(0xFF1b1e44),
                                 fontSize: 20,

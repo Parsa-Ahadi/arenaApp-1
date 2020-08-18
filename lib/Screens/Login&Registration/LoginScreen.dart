@@ -216,7 +216,7 @@ class _LoginScreenState extends State<LoginScreen> {
                             minWidth: MediaQuery.of(context).size.width,
                             height: 40.0,
                             onPressed: () {
-                              if (ValidateAndSave()) {
+                              if (validateAndSave()) {
                                 print(requestModel.toJson());
                               }
                             },
@@ -269,7 +269,7 @@ class _LoginScreenState extends State<LoginScreen> {
     );
   }
 
-  bool ValidateAndSave() {
+  bool validateAndSave() {
     final formPass = _formPassword.currentState;
     final formEmail = _formEmail.currentState;
 

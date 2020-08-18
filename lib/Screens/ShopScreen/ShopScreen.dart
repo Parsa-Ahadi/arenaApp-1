@@ -1,11 +1,8 @@
-import 'dart:math';
-
 import 'package:arena/Colors/colors.dart';
 import 'package:arena/CustomClipper/ShopScreenClipBG.dart';
 
 import 'package:arena/Themes/TextTheme.dart';
 import 'package:arena/Utilities/FunkoPopDetail.dart';
-import 'package:arena/Utilities/ShopScreenItemInfo.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:flutter_swiper/flutter_swiper.dart';

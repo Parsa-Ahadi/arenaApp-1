@@ -252,7 +252,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                             minWidth: MediaQuery.of(context).size.width,
                             height: 40.0,
                             onPressed: () {
-                              if (ValidateAndSave()) {
+                              if (validateAndSave()) {
                                 print(requestModel.toJson());
                                 Navigator.popAndPushNamed(context, IntroScreen.id);
                               }
@@ -275,7 +275,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
     );
   }
 
-  bool ValidateAndSave() {
+  bool validateAndSave() {
     final formPass = _formPassword.currentState;
     final formEmail = _formEmail.currentState;
 
