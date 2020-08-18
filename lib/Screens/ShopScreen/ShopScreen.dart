@@ -207,7 +207,7 @@ class _ShopScreenState extends State<ShopScreen> {
                               bottom: 50,
                               left: 50,
                               child: Hero(
-                                tag: Text('DetailImage'),
+                                tag: FunkoPopDetail.listFunkoPop[index].tagTitle,
                                 child: Image.asset(
                                   funkoPops[index].imageUrl,
                                   width: 300,
