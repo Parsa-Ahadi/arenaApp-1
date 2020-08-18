@@ -9,6 +9,7 @@ import 'package:flutter_swiper/flutter_swiper.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'Funko_Pop_Detail_Page.dart';
+
 enum Game {
   Fortnite,
   ApexLegends,
@@ -21,7 +22,6 @@ class ShopScreen extends StatefulWidget {
   @override
   _ShopScreenState createState() => _ShopScreenState();
 }
-
 
 class _ShopScreenState extends State<ShopScreen> {
   Game selectedGame;
@@ -174,18 +174,10 @@ class _ShopScreenState extends State<ShopScreen> {
                     itemWidth: width - 62 * 2,
                     itemHeight: height - 62 * 2,
                     layout: SwiperLayout.STACK,
-                    onTap: (index) {
-                      Navigator.of(context).push(
-                        MaterialPageRoute(
-                          builder: (context) => FunkoPopDetailPage(
-                            funkoPops[index],
-                          ),
-                        ),
-                      );
-                    },
                     itemBuilder: (context, index) {
                       return InkWell(
                         onTap: () {
+                          print(index);
                           Navigator.push(
                             context,
                             PageRouteBuilder(
@@ -207,10 +199,12 @@ class _ShopScreenState extends State<ShopScreen> {
                               bottom: 50,
                               left: 50,
                               child: Hero(
-                                tag: listFunkoPop[index].tagTitle,
+                                tag: Text('${listFunkoPop[index].tagTitle}'),
+                                //tag: listFunkoPop[index].tagTitle,
                                 child: Image.asset(
                                   funkoPops[index].imageUrl,
                                   width: 300,
+                                  height: 300,
                                 ),
                               ),
                             ),
@@ -220,6 +214,8 @@ class _ShopScreenState extends State<ShopScreen> {
                     },
                   ),
                 ),
+
+                
               ],
             ),
           ),
