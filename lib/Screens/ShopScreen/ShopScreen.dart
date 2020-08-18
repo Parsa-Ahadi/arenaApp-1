@@ -25,7 +25,7 @@ class ShopScreen extends StatefulWidget {
 
 class _ShopScreenState extends State<ShopScreen> {
   Game selectedGame;
-  List<FunkoPopDetail> funkoPops = FunkoPopDetail.listFunkoPop;
+  List<FunkoPopDetail> funkoPops = listFunkoPop;
 
   @override
   Widget build(BuildContext context) {
@@ -207,7 +207,7 @@ class _ShopScreenState extends State<ShopScreen> {
                               bottom: 50,
                               left: 50,
                               child: Hero(
-                                tag: FunkoPopDetail.listFunkoPop[index].tagTitle,
+                                tag: listFunkoPop[index].tagTitle,
                                 child: Image.asset(
                                   funkoPops[index].imageUrl,
                                   width: 300,

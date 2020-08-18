@@ -4,7 +4,7 @@ class FunkoPopDetail {
   final String imageUrl;
   final String price;
   final String title;
-  final int tagTitle;
+  final double tagTitle;
   final Color bgColor;
   final int remainingOfItem;
   final int rating;
@@ -20,9 +20,10 @@ class FunkoPopDetail {
   });
 
  
-  
-  
-  static List<FunkoPopDetail> listFunkoPop = [
+}
+
+
+  List<FunkoPopDetail> listFunkoPop = [
     FunkoPopDetail(
       imageUrl: 'images/funko_pop_fortnite_1.png',
       price: '\$ 6.99',
@@ -60,4 +61,3 @@ class FunkoPopDetail {
       rating: 5,
     )
   ];
-}
